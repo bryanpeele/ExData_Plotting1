@@ -1,4 +1,4 @@
-data <-read.csv("household_power_consumption.txt",sep=";")
+data <-read.csv("household_power_consumption.txt",sep=";",stringsAsFactors = FALSE)
 
 data <- subset(data,Date=="1/2/2007" | Date=="2/2/2007")
 
